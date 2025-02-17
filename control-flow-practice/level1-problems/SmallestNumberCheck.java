@@ -14,7 +14,7 @@ public class SmallestNumberCheck {
         
         // Check if the first number is the smallest
         boolean isSmallest = (number1 < number2 && number1 < number3);
-        System.out.printf("Is the first number the smallest? %b%n", isSmallest);
+        System.out.printf("Is the first number the smallest? ", isSmallest);
 
     }
 }
