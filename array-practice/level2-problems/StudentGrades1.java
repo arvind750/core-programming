@@ -49,7 +49,7 @@ public class StudentGrades1 {
  
     }  
 
-    private static int getValidMarks(Scanner scanner) {  
+    public static int getValidMarks(Scanner scanner) {  
         int marks;  
         while (true) {  
             marks = scanner.nextInt();  
@@ -62,7 +62,7 @@ public class StudentGrades1 {
         return marks;  
     }  
 
-    private static String calculateGrade(double percentage) {  
+    public static String calculateGrade(double percentage) {  
         if (percentage >= 80) return "A";  
         else if (percentage >= 70) return "B";  
         else if (percentage >= 60) return "C";  
