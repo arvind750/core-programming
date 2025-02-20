@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class FindVowelsAndConsonants {
 
-    // Method to check if the character is a vowel or consonant
     public static String checkCharacterType(char ch) {
         ch = Character.toLowerCase(ch);
         if (ch >= 'a' && ch <= 'z') {
@@ -16,7 +15,6 @@ public class FindVowelsAndConsonants {
         }
     }
 
-    // Method to find vowels and consonants in a string
     public static String[][] findVowelsAndConsonants(String str) {
         String[][] result = new String[str.length()][2];
         for (int i = 0; i < str.length(); i++) {
@@ -27,7 +25,6 @@ public class FindVowelsAndConsonants {
         return result;
     }
 
-    // Method to display the 2D Array of Strings in a Tabular Format
     public static void displayResult(String[][] result) {
         System.out.println("Character\tType");
         for (int i = 0; i < result.length; i++) {
@@ -35,13 +32,12 @@ public class FindVowelsAndConsonants {
         }
     }
 
-    // Main function to take user inputs and display the result
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a string: ");
         String input = scanner.nextLine();
         String[][] result = findVowelsAndConsonants(input);
         displayResult(result);
-        scanner.close();
     }
 }
